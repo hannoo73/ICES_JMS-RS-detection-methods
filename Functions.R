@@ -346,6 +346,27 @@ ClusterSurrogates <- function(AllS, ListOfVar, i){
 }
 
 
+FindClusters <- function(x){
+  local({
+    dist <- dist(x, "euclidean",  diag = TRUE, upper = TRUE)
+    clusters <- chclust(dist, method="coniss")
+    
+    g <-bstick(clusters, plot=F)
+    
+    for (p in 1:nrow(g)){
+      if (g$dispersion[p]>g$bstick[p]){
+        km <- g$nGroups[p]
+        break
+      }
+      else{
+        km <- 1
+      }
+    }
+    return(km) 
+  })
+}
+
+
 #####
 
 

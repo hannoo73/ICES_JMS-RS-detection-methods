@@ -1,8 +1,5 @@
 ### Time-series plots ####
 
-rep(c("#1B998B","#A5BE00","#3C65FA","#5C2751","#E63946", 
-      "#A8DADC","#457B9D","#1D3557","#ffd60a"),4)
-
 A <- list()
 
 A$AW <- ggplot(NoS,aes(x=Year, y=ArcticWater))+

@@ -5,8 +5,8 @@
 # Make sure your environment is clean
 rm(list=ls())
 
-# CHANGE THIS !! 
-setwd("~/Desktop/Tromsø/R_tromso/Github_versions")
+# SET your own working directory 
+setwd("")
 
 source("Functions.R")
 source("Libraries.R") 
@@ -40,7 +40,6 @@ load(file="Data/NoS_omni_list", verbose=T)
 
 #### Envcpt #####
 
-x = NoS_Omni[, 2]
 
 envcpt <- list()
 

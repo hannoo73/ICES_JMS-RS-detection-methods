@@ -6,7 +6,7 @@
 rm(list=ls())
 
 # CHANGE THIS !! 
-setwd("~/Desktop/Tromsø/R_tromso/Github_versions")
+setwd("")
 
 # load functions files, please make sure they are in your current directory
 source("Functions.R")
@@ -306,26 +306,6 @@ for (i in (1:length(Surrogates$NAO2))){
 
 ## Apply the clustering function to each grouping 
 
-
-FindClusters <- function(x){
-  local({
-    dist <- dist(x, "euclidean",  diag = TRUE, upper = TRUE)
-    clusters <- chclust(dist, method="coniss")
-    
-    g <-bstick(clusters, plot=F)
-    
-    for (p in 1:nrow(g)){
-      if (g$dispersion[p]>g$bstick[p]){
-        km <- g$nGroups[p]
-        break
-      }
-      else{
-        km <- 1
-      }
-    }
-    return(km) 
-  })
-}
 
 
 Tidy_clusterRes_Omni <- list()
