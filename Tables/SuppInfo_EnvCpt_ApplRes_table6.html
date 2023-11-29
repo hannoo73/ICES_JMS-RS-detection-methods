@@ -281,2032 +281,373 @@ border: 0;
 </head>
 <body>
 <table class=" lightable-paper" style="font-family: avenir; width: auto !important; margin-left: auto; margin-right: auto;">
-<caption>Table X: Summary of results from EnvCpt surrogate testing on all 32 available Norwegian Sea variables</caption>
+<caption>Table 6: Summary of results from EnvCpt application on all 32 available Norwegian Sea original time series,
+      an x indicates that this model was selected according to its BIC score, if more than one X occurs for each variable/row, a conflict arose</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Variable </th>
-   <th style="text-align:left;"> Var1 </th>
-   <th style="text-align:left;"> Model </th>
-   <th style="text-align:left;"> Changepoint </th>
-   <th style="text-align:left;"> pct </th>
+   <th style="text-align:left;"> Mean_Cpt </th>
+   <th style="text-align:left;"> Mean </th>
+   <th style="text-align:left;"> Mean_AR1 </th>
+   <th style="text-align:left;"> Trend_AR1 </th>
+   <th style="text-align:left;"> Trend_AR1_Cpt </th>
+   <th style="text-align:left;"> Trend_Cpt </th>
+   <th style="text-align:left;"> Mean_AR1_Cpt </th>
+   <th style="text-align:left;"> Trend </th>
   </tr>
  </thead>
 <tbody>
   <tr>
    <td style="text-align:left;"> NAO2 </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.6 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NAO2 </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NAO2 </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 1.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NAO2 </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NAO2 </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NAO2 </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NAO2 </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NAO2 </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NAO2 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 97.7 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> SPGIndexWinter </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SPGIndexWinter </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SPGIndexWinter </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 9.6 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SPGIndexWinter </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 5.9 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SPGIndexWinter </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SPGIndexWinter </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SPGIndexWinter </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SPGIndexWinter </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SPGIndexWinter </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 83.9 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> NLGyre </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NLGyre </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NLGyre </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NLGyre </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NLGyre </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NLGyre </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NLGyre </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NLGyre </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NLGyre </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 99.3 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> SvinCoreT </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 5.6 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SvinCoreT </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 1.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SvinCoreT </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 15.2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SvinCoreT </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 5.4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SvinCoreT </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SvinCoreT </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SvinCoreT </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SvinCoreT </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SvinCoreT </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 72.8 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> SviCoreS </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.9 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SviCoreS </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SviCoreS </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 18.7 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SviCoreS </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 5.7 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SviCoreS </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SviCoreS </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SviCoreS </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SviCoreS </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SviCoreS </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 74.4 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> ArcticWater </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 1.5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ArcticWater </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ArcticWater </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 18.6 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ArcticWater </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 5.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ArcticWater </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ArcticWater </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ArcticWater </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ArcticWater </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ArcticWater </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 74.5 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> RHeatContent </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RHeatContent </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 1.2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RHeatContent </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 3.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RHeatContent </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 2.9 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RHeatContent </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RHeatContent </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RHeatContent </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RHeatContent </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RHeatContent </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 92.3 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> RFreshWaterContent </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RFreshWaterContent </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 1.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RFreshWaterContent </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 2.7 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RFreshWaterContent </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 3.8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RFreshWaterContent </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RFreshWaterContent </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RFreshWaterContent </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RFreshWaterContent </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RFreshWaterContent </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 92.2 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> TempLanganes </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 5.2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> TempLanganes </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> TempLanganes </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 11.6 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> TempLanganes </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 3.5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> TempLanganes </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> TempLanganes </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> TempLanganes </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> TempLanganes </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> TempLanganes </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 78.9 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
   </tr>
   <tr>
    <td style="text-align:left;"> SalLanganes </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 1.5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SalLanganes </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SalLanganes </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 3.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SalLanganes </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 1.8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SalLanganes </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SalLanganes </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SalLanganes </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SalLanganes </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SalLanganes </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 92.9 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> ZooB </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 2.5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 1.6 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 5.7 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 13.7 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 76.5 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> ZooB.LB </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 1.4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.LB </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 3.2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.LB </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 3.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.LB </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 18.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.LB </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.LB </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.LB </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.LB </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.LB </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 74.2 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> ZooB.NB </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 3.7 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.NB </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 1.8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.NB </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 2.9 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.NB </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 9.8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.NB </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.NB </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.NB </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.NB </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.NB </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 81.8 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
   </tr>
   <tr>
    <td style="text-align:left;"> ZooB.48W </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 1.9 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.48W </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.6 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.48W </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 12.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.48W </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 4.8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.48W </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.48W </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.48W </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.48W </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.48W </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 80.6 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> ZooNEIceland </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 1.7 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooNEIceland </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooNEIceland </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 5.2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooNEIceland </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooNEIceland </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 3.4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooNEIceland </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooNEIceland </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooNEIceland </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooNEIceland </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 89.1 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> HerringR.age2 </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 1.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringR.age2 </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringR.age2 </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 4.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringR.age2 </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 6.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringR.age2 </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringR.age2 </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringR.age2 </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringR.age2 </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringR.age2 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 88.4 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> BluewhitingR.age1 </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingR.age1 </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingR.age1 </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 4.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingR.age1 </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 2.7 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingR.age1 </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingR.age1 </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingR.age1 </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingR.age1 </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingR.age1 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 91.9 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> MackerelR.age2 </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 5.4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelR.age2 </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelR.age2 </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 4.8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelR.age2 </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 1.9 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelR.age2 </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelR.age2 </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelR.age2 </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelR.age2 </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelR.age2 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 87.6 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> HerringB </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 3.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringB </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 4.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringB </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 9.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringB </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringB </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringB </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringB </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringB </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringB </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 84.0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> BluewhitingB </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingB </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.7 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingB </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 10.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingB </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 6.7 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingB </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingB </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingB </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingB </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingB </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 82.2 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> MackerelB </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelB </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 25.2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelB </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 3.8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelB </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelB </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelB </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelB </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelB </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelB </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 70.2 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> HerringW6 </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.7 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringW6 </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 1.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringW6 </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 3.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringW6 </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 3.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringW6 </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringW6 </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringW6 </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringW6 </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringW6 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 92.2 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> BluewhitingW6 </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 1.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingW6 </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingW6 </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 5.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingW6 </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 1.8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingW6 </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingW6 </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingW6 </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingW6 </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingW6 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 91.4 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> MackerelW6 </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 3.8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelW6 </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.9 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelW6 </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 12.5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelW6 </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 2.7 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelW6 </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelW6 </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelW6 </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelW6 </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelW6 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 80.1 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> BluewhitingL6 </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 3.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingL6 </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingL6 </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 7.4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingL6 </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 3.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingL6 </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingL6 </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingL6 </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingL6 </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingL6 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 85.7 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> MackerelL6 </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 4.7 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelL6 </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelL6 </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 11.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelL6 </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 2.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelL6 </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelL6 </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelL6 </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelL6 </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelL6 </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 81.8 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> HerringLG </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringLG </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringLG </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 1.5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringLG </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringLG </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringLG </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringLG </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringLG </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringLG </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 98.0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> NPPtotalC </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.7 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPtotalC </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPtotalC </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 4.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPtotalC </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPtotalC </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 2.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPtotalC </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPtotalC </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPtotalC </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPtotalC </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 92.9 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> NPPpeak </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 1.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPpeak </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPpeak </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPpeak </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 3.7 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPpeak </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPpeak </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPpeak </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPpeak </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPpeak </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 94.6 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
   </tr>
   <tr>
    <td style="text-align:left;"> NPPstart </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPstart </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.6 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPstart </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 1.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPstart </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPstart </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPstart </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPstart </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPstart </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPstart </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 97.9 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
   </tr>
   <tr>
    <td style="text-align:left;"> NPPend </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPend </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 1.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPend </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 2.2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPend </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPend </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPend </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPend </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPend </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPend </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 96.5 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
   </tr>
   <tr>
    <td style="text-align:left;"> NPPduration </td>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> Mean </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPduration </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> Mean_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPduration </td>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> Mean_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.9 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPduration </td>
-   <td style="text-align:left;"> 4 </td>
-   <td style="text-align:left;"> Mean_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 1.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPduration </td>
-   <td style="text-align:left;"> 5 </td>
-   <td style="text-align:left;"> Trend </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPduration </td>
-   <td style="text-align:left;"> 6 </td>
-   <td style="text-align:left;"> Trend_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPduration </td>
-   <td style="text-align:left;"> 7 </td>
-   <td style="text-align:left;"> Trend_AR1 </td>
-   <td style="text-align:left;"> No changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPduration </td>
-   <td style="text-align:left;"> 8 </td>
-   <td style="text-align:left;"> Trend_AR1_Cpt </td>
-   <td style="text-align:left;"> Changepoint </td>
-   <td style="text-align:left;"> 0.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NPPduration </td>
-   <td style="text-align:left;"> NA </td>
-   <td style="text-align:left;"> NoModelSelected </td>
-   <td style="text-align:left;"> None </td>
-   <td style="text-align:left;"> 97.3 </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> x </td>
   </tr>
 </tbody>
 </table>

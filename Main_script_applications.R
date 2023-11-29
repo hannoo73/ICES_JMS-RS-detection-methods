@@ -132,7 +132,7 @@ Tes$Significant <- "No"
 Tes$Significant <- ifelse(Tes$Pval<0.05,"Yes","No")
 
 save(Tes, file = "Result_data/Struc_applRes")
-
+load(file = "Result_data/Struc_applRes", verbose = T)
 
 #####
 ###### CLustering #####

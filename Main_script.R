@@ -41,8 +41,8 @@ Global_OmniresEnvCpt <- Surrogates%>%
   
 #save(Global_OmniresEnvCpt, file = "Result_data/Global_OmniresEnvcpt")
 
-load("Result_data/Global_OmniresEnvcpt")
-
+load("Result_data/Global_OmniresEnvcpt", verbose = T)
+Global_OmniresEnvCpt
 ### Element 1: COUNT NA
 
 OmniEnvCptCount_NA <- Global_OmniresEnvCpt%>%
@@ -57,7 +57,7 @@ OmniEnvCptCount_NA$pct <- OmniEnvCptCount_NA$Freq/10 # to get percentages instea
 
 #save(OmniEnvCptCount_NA, file = "Result_data/OmniEnvCpt_NA")
 
-#load(file = "Result_data/OmniEnvCpt_NA")
+load(file = "Result_data/OmniEnvCpt_NA", verbose = T)
 
 # Reformat the names for graphs
 OmniEnvCptCount_NA[OmniEnvCptCount_NA$Variable=="ArcticWater",5] <- "Arctic Water"
@@ -66,8 +66,16 @@ OmniEnvCptCount_NA[OmniEnvCptCount_NA$Variable=="NAO2",5] <- "NAO"
 OmniEnvCptCount_NA[OmniEnvCptCount_NA$Variable=="NPPtotalC",5] <- "Primary Production"
 OmniEnvCptCount_NA[OmniEnvCptCount_NA$Variable=="ZooB",5] <- "Zooplankton"
 OmniEnvCptCount_NA[OmniEnvCptCount_NA$Variable=="HerringB",5] <- "Herring"
+OmniEnvCptCount_NA
 
+# element 3: which conflicts
 
+OmniEnvCpt_topmodels <- Global_OmniresEnvCpt%>%
+  lapply(.,function(x) sapply(x, "[[", 3))%>% #takes the first element of each list and creates a new list with only those elements
+  lapply(.,my_table2)%>%
+  tidy_NA(.)
+Global_OmniresEnvCpt$NAO2$V1
+OmniEnvCpt_topmodels$NAO2
 ## Element 4: Model conflicts
 
 ## Exacting and condensing element 4: determine the nature of the conflict between the best fitting models
@@ -83,7 +91,7 @@ OmniEnvCptCount_Conflict$pct <- OmniEnvCptCount_Conflict$Count/10
 
 
 #save(OmniEnvCptCount_Conflict, file = "Result_data/OmniEnvCpt_Conflict")
-load(file = "Result_data/OmniEnvCpt_Conflict")
+load(file = "Result_data/OmniEnvCpt_Conflict", verbose = T)
 
 
 
@@ -115,6 +123,7 @@ Merge2[Merge2$Conflict=="NoConflict",5] <- "NoConflict" # set only the ones with
 colnames(Merge)
 colnames(Merge2)
 
+
 Merge2$Var1 <- Merge2$Conflict # duplicate columns to fit to larger df, could of done it the other way around 
 Merge2$Model <- Merge2$Conflict
 Merge2$Changepoint <-  Merge2$Conflict
@@ -134,7 +143,7 @@ Merge2 <- Merge2[!Merge2$Model=="NoConflict",] # remove all the definite results
 # rbind the two df so that the extra detail of what happens in the conflict, or inconclusive categories is included
 MM <- rbind(Merge, Merge2)
 
-save(EnvCptCount_Conflict, file = "Result_data/EnvCpt_Conflict")
+#save(EnvCptCount_Conflict, file = "Result_data/EnvCpt_Conflict")
 load("Result_data/EnvCpt_Conflict")
 
 MM$new <- "No changepoint"
@@ -147,9 +156,21 @@ MM$new <- ifelse(MM$Changepoint=="OnlyBase", "No changepoint", MM$new)
 TM <- MM[MM$Variable %in% c('Arctic Water',"NAO", "Temperature", "Primary Production","Zooplankton","Herring"),c(1,8,5)]%>%
              group_by(Variable, new)%>%
              summarise(pct=sum(pct))
-           
+
 colnames(TM)[2] <- "Model"
 TM1 <-TM
+
+# for pretty tables
+TMall <- MM[,c(1,8,5)]%>%
+  group_by(Variable, new)%>%
+  summarise(pct=sum(pct))%>%
+  pivot_wider(names_from = "new", values_from = "pct")
+
+mean(TMall$Changepoint)
+mean(TMall$Changepoint[c(1,6,14,19,27,28)])        
+mean(TMall$Mixed)
+mean(TMall$Mixed[c(1,6,14,19,27,28)])        
+
        
 #save(TM, file = "Result_data/TM")
 #load(file = "Result_data/TM", verbose=T)
@@ -179,6 +200,7 @@ rownames(Tidy_OmniSRes) <- NULL
 colnames(Tidy_OmniSRes) <- c("Yes", "No","Variable")
 
 save(Tidy_OmniSRes, file = "Result_data/Strucchange_Omniresults_YN")
+load(file = "Result_data/Strucchange_Omniresults_YN", verbose = T)
 
 #####
 
@@ -207,7 +229,7 @@ Tidy_OmniSTARSres <- Tidy_OmniSTARSres[,c(2,3,1)] # reorder
 # Tidy_OmniSTARSres = percentage of surrogates where STARS found 0 to 13 significant changepoints
 
 #save(Tidy_OmniSTARSres, file = "Result_data/STARS_Omniresults_details")
-load(file = "Result_data/STARS_Omniresults_details")
+load(file = "Result_data/STARS_Omniresults_details", verbose = T)
 
 # Transform previous file to just get false positives and ture negatives (Yes/No changepoints)
 
@@ -218,10 +240,10 @@ Tidy_OmniSTARSres_YN <- Tidy_OmniSTARSres%>%
   select(c(Variable,Surrogate_N,Surrogate_Y))
 
 #save(Tidy_OmniSTARSres_YN, file = "Result_data/STARS_Omniresults_YN")
-load(file = "Result_data/STARS_Omniresults_YN")
+load(file = "Result_data/STARS_Omniresults_YN", verbose = T)
 
-
-
+mean(Tidy_OmniSTARSres_YN$Surrogate_Y)
+NoS
 
 ##### CLUSTERING #####
 
