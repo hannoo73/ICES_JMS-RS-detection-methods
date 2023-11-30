@@ -281,373 +281,141 @@ border: 0;
 </head>
 <body>
 <table class=" lightable-paper" style="font-family: avenir; width: auto !important; margin-left: auto; margin-right: auto;">
-<caption>Table 6: Summary of results from EnvCpt application on all 32 available Norwegian Sea original time series,
-      an x indicates that this model was selected according to its BIC score, if more than one X occurs for each variable/row, a conflict arose</caption>
+<caption>S1: Summary of results from STARS application on all 32 available Norwegian Sea original time series, a 0 appears in the chgpt_years columns when no changepoints were found</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> Variable </th>
-   <th style="text-align:left;"> Mean_Cpt </th>
-   <th style="text-align:left;"> Mean </th>
-   <th style="text-align:left;"> Mean_AR1 </th>
-   <th style="text-align:left;"> Trend_AR1 </th>
-   <th style="text-align:left;"> Trend_AR1_Cpt </th>
-   <th style="text-align:left;"> Trend_Cpt </th>
-   <th style="text-align:left;"> Mean_AR1_Cpt </th>
-   <th style="text-align:left;"> Trend </th>
+   <th style="text-align:left;"> Chgpt_years </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> NAO2 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SPGIndexWinter </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NLGyre </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SvinCoreT </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SviCoreS </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-  </tr>
-  <tr>
    <td style="text-align:left;"> ArcticWater </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 2001 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> RHeatContent </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> BluewhitingB </td>
+   <td style="text-align:left;"> 1998,2008 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> RFreshWaterContent </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> BluewhitingL6 </td>
+   <td style="text-align:left;"> 1977,1998 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> TempLanganes </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> BluewhitingR.age1 </td>
+   <td style="text-align:left;"> 1996,2005 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> SalLanganes </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> BluewhitingW6 </td>
+   <td style="text-align:left;"> 2000 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> ZooB </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> HerringB </td>
+   <td style="text-align:left;"> 1924,1929,1943,1951,1959,1967,1988,1997 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> ZooB.LB </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.NB </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooB.48W </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ZooNEIceland </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> HerringLG </td>
+   <td style="text-align:left;"> 1973,1983,1995 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> HerringR.age2 </td>
    <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingR.age1 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelR.age2 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HerringB </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingB </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelB </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> HerringW6 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 1973,1984,1996 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> BluewhitingW6 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> MackerelW6 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BluewhitingL6 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> MackerelB </td>
+   <td style="text-align:left;"> 1992,2008 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> MackerelL6 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 1980,2009 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> MackerelR.age2 </td>
+   <td style="text-align:left;"> 2003 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> MackerelW6 </td>
+   <td style="text-align:left;"> 1993,2007 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> NAO2 </td>
+   <td style="text-align:left;"> 1962,1989,1996 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> NLGyre </td>
    <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> HerringLG </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> NPPduration </td>
    <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> NPPtotalC </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> NPPend </td>
    <td style="text-align:left;"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> NPPpeak </td>
    <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
   </tr>
   <tr>
    <td style="text-align:left;"> NPPstart </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
    <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> NPPend </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> NPPtotalC </td>
    <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> NPPduration </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> x </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> x </td>
+   <td style="text-align:left;"> RFreshWaterContent </td>
+   <td style="text-align:left;"> 1973,1981,2000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> RHeatContent </td>
+   <td style="text-align:left;"> 1977,1985,2001 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SPGIndexWinter </td>
+   <td style="text-align:left;"> 1997 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SalLanganes </td>
+   <td style="text-align:left;"> 1974,1980,2004 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SviCoreS </td>
+   <td style="text-align:left;"> 1980,2002 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SvinCoreT </td>
+   <td style="text-align:left;"> 1981,1997,2002,2012 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> TempLanganes </td>
+   <td style="text-align:left;"> 1984,1988,2003 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ZooB </td>
+   <td style="text-align:left;"> 2004 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ZooB.48W </td>
+   <td style="text-align:left;"> 2005 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ZooB.LB </td>
+   <td style="text-align:left;"> 2003 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ZooB.NB </td>
+   <td style="text-align:left;"> 2006 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ZooNEIceland </td>
+   <td style="text-align:left;"> 2004,2008 </td>
   </tr>
 </tbody>
 </table>
